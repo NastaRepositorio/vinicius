@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Table pagination: active page highlight */
+.mary-table-pagination span[aria-current="page"] > span {
+    @apply bg-primary text-base-100
+}
+
+/* Table pagination: for dark mode*/
+.mary-table-pagination span[aria-disabled="true"] span {
+    @apply bg-inherit
+}
+
+/* Table pagination: for dark mode */
+.mary-table-pagination button {
+    @apply bg-base-100
+}
+
+/* Para navegadores baseados em WebKit */
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Para Firefox */
+body {
+    scrollbar-width: none; /* Oculta a barra de rolagem */
+}
+
+/* Para Internet Explorer 10+ e Edge */
+body {
+    -ms-overflow-style: none;  /* Oculta a barra de rolagem */
+}
+
