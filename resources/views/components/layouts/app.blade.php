@@ -90,6 +90,7 @@
                         <x-menu-item title="Usuários" icon="o-users" link="{{ route('users') }}" />
                         <x-menu-item title="Vendedores" icon="o-user-group" link="{{ route('vendedores') }}" />
                         <x-menu-item title="Clientes" icon="o-folder" link="{{ route('clientes') }}" />
+                        <x-menu-item title="Contas Bancárias" icon="o-building-library" link="{{ route('contasbancarias') }}" />
                     @endif
 
                     {{-- <x-menu-sub title="Settings" icon="o-cog-6-tooth">

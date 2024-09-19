@@ -22,3 +22,7 @@ Volt::route('/vendedores', 'vendedores.index')
 Volt::route('/clientes', 'clientes.index')
     ->name('clientes')
     ->middleware(['auth', 'admin']);
+
+Volt::route('/contasbancarias', 'contas_bancarias.index')
+    ->name('contasbancarias')
+    ->middleware(['auth', 'admin']);
